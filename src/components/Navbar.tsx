@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 
 const links = [
@@ -30,8 +31,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-serif text-lg font-bold tracking-tight text-fg">
-          SD<span className="text-accent">.</span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/Smaran_Das_Logo.png"
+            alt="Smaran Das"
+            width={72}
+            height={72}
+            className="object-contain"
+          />
         </a>
 
         <div className="flex items-center gap-6">
