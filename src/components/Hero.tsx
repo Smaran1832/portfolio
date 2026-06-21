@@ -29,8 +29,18 @@ const fadeUp = (delay: number) => ({
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center">
-      <div className="max-w-6xl mx-auto px-6 pt-24 pb-20 w-full">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+      {/* Background illustration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img
+          src="/J_wave.svg"
+          alt=""
+          className="w-full h-full object-cover"
+          style={{ opacity: "var(--wave-opacity)" }}
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 pt-24 pb-20 w-full relative">
         <motion.p
           {...fadeUp(0.1)}
           className="text-accent text-xs font-medium tracking-[0.2em] uppercase mb-5"
@@ -98,7 +108,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 z-10"
       >
         <span className="text-[10px] text-muted tracking-[0.25em] uppercase">Scroll</span>
         <motion.div

@@ -21,7 +21,7 @@ export default function Projects() {
             Work
           </p>
           <h2 className="font-serif text-[clamp(40px,6vw,80px)] font-bold leading-tight tracking-tight text-fg mb-3">
-            Selected Projects
+            Featured Projects
           </h2>
           <div className="w-12 h-0.5 bg-accent" />
         </motion.div>
