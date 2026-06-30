@@ -7,6 +7,7 @@ export const projects = [
       "City mobility optimization dashboard with an analytics engine for real-time data visualization and ML-driven trend analysis. Deployed on AWS with Docker and CI/CD pipelines.",
     tags: ["React", "Django", "PostgreSQL", "Docker", "AWS"],
     href: "#",
+    github: "https://github.com/Smaran1832/Sustainable-City-Management",
     cardBg: "#EEF0E8",
   },
   {
@@ -17,6 +18,7 @@ export const projects = [
       "Fine-tuned a neural network using OpenCV and TensorFlow to automate CAPTCHA solving, achieving 90% accuracy with advanced image preprocessing techniques.",
     tags: ["TensorFlow", "OpenCV", "Python", "Neural Networks"],
     href: "#",
+    github: "https://github.com/Smaran1832/Captcha-Solver",
     cardBg: "#E8EEE8",
   },
   {
@@ -27,6 +29,7 @@ export const projects = [
       "Immersive Google Cardboard VR application recreating a medieval castle with physics-based mechanics and 3D assets optimized for mobile VR platforms.",
     tags: ["Unity3D", "C#", "Google Cardboard SDK"],
     href: "#",
+    github: "https://github.com/Smaran1832/Virtual-Reality-Medieval-Castle-",
     cardBg: "#EAE8EE",
   },
 ];
